@@ -11,9 +11,9 @@ var baseimage;
 var playerimage;
 
 function preload() {
-  backgroundImg = loadImage(".background.png");
-  baseimage = loadImage(".base.png");
-  playerimage = loadImage(".player.png");
+  backgroundImg = loadImage("background.png");
+  baseimage = loadImage("base.png");
+  playerimage = loadImage("player.png");
 }
 
 function setup() {
@@ -60,8 +60,8 @@ function draw() {
 
   if (keyCode === 32) {
     // arrow.(playerArcher.body.angle);
-     arrow.shoot(playerArcher.angle);
-    // arrow.shoot(playerArcher.body.angle);
+     //arrow.shoot(playerArcher.angle);
+     arrow.shoot(playerArcher.body.angle);
      //arrow.shoot(playerArcher);
   }
 
